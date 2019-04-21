@@ -1,0 +1,16 @@
+
+ls r1 d0 1 Quantity
+ls r2 d1 1 Quantity
+ls r3 d2 1 Quantity
+
+div r1 r1 100
+div r2 r2 100
+div r3 r3 100
+
+s d3 Setting r1
+s d4 Setting r2
+s d5 Setting r3
+
+yield
+
+j 0
