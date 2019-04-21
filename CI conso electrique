@@ -1,0 +1,16 @@
+
+l r0 d0 PowerActual
+l r1 d1 PowerActual
+l r2 d2 PowerActual
+
+s d3 Mode 2
+s d4 Mode 2
+s d5 Mode 2
+
+s d3 Setting r0
+s d4 Setting r1
+s d5 Setting r2
+
+yield?
+
+j
