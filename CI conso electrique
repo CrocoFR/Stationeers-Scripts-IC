@@ -1,16 +1,18 @@
+#Affichage consomation électrique
+#branchement 3 analyseur cable sur d0 à d2 et 3 console led sur d3 à d5
 
-l r0 d0 PowerActual
+l r0 d0 PowerActual #charge sur r0 depuis la vis d0 la Puissance actuelle
 l r1 d1 PowerActual
 l r2 d2 PowerActual
 
-s d3 Mode 2
+s d3 Mode 2 #stock sur d3 en mode 2 (affichage en Watt)
 s d4 Mode 2
 s d5 Mode 2
 
-s d3 Setting r0
+s d3 Setting r0 #stock sur d3 le Setting de r0
 s d4 Setting r1
 s d5 Setting r2
 
-yield?
+yield #attendre tour horlorge
 
-j
+j #boucle
