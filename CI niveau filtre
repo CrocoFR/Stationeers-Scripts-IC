@@ -1,16 +1,16 @@
 
-ls r1 d0 1 Quantity
+ls r1 d0 1 Quantity #charge information slot en r1 venant de la vis d0 lire slot 1 et sa quantité
 ls r2 d1 1 Quantity
 ls r3 d2 1 Quantity
 
-div r1 r1 100
+div r1 r1 100 #divise et enregistre dans r1 le caclul r1 diviser par 100
 div r2 r2 100
 div r3 r3 100
 
-s d3 Setting r1
+s d3 Setting r1 #stock sur le vis d3 le Setting dans r1
 s d4 Setting r2
 s d5 Setting r3
 
-yield
+yield #attendre un tour d'horloge
 
-j 0
+j 0 #reprends lecture ligne 0
