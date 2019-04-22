@@ -6,6 +6,7 @@ l r1 d1 PowerActual
 l r2 d2 PowerActual
 
 s d3 Mode 2 #stock sur d3 en mode 2 (affichage en Watt)
+#s d3 Color 4 #pour changer la couleur
 s d4 Mode 2
 s d5 Mode 2
 
